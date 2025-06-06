@@ -1,0 +1,68 @@
+:root {
+  /* brand */
+  --brand100: #691F74;
+
+  /* grayscale */
+  --grayWhite: #FFFFFF;
+  --grayBlack: #000000;
+  --gray100: #F9F9F9;
+  --gray200: #EEEEEE;
+  --gray300: #CCCCCC;
+  --gray400: #767676;
+  --gray500: #555555;
+  --gray600: #333333;
+  --gray700: #212121;
+
+  /* font size */
+  --title-important: 40px;
+  --title-sectionKorea: 36px;
+  --title-Manuscript: 32px;
+  --title-sectionEnglish: 28px;
+  --title-thumnail: 24px;
+
+  --text-lead: 22px;
+  --text-lg: 20px;
+  --text-md: 16px;
+  --text-sm: 14px;
+  --text-table: 16px;
+
+  /* spacing */
+  --content-spacing: 120px;
+  --footer-spacing: 240px;
+}
+
+@media screen and (max-width: 1440px) {
+  :root {
+    --title-important: 36px;
+    --title-sectionKorea: 32px;
+    --title-Manuscript: 28px;
+    --title-sectionEnglish: 24px;
+    --title-thumnail: 20px;
+
+    --text-lead: 20px;
+    --text-lg: 18px;
+    --text-md: 16px;
+    --text-sm: 14px;
+    --text-table: 14px;
+
+    --content-spacing: 120px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  :root {
+    --title-important: 32px;
+    --title-sectionKorea: 28px;
+    --title-Manuscript: 24px;
+    --title-sectionEnglish: 20px;
+    --title-thumnail: 16px;
+
+    --text-lead: 18px;
+    --text-lg: 16px;
+    --text-md: 16px;
+    --text-sm: 14px;
+    --text-table: 12px;
+
+    --content-spacing: 80px;
+  }
+}
