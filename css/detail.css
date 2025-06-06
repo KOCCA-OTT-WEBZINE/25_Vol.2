@@ -411,8 +411,10 @@
 .image-title,
 .image-caption {
   font-size: var(--text-md);
-  color: var(--gray600);
-  text-align: left;
+  color: var(--gray400);
+  line-height: 1.4;
+
+  text-align: justify;
   display: flex;
   flex-direction: column;
   gap: 4px;

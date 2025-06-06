@@ -2,16 +2,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const contents = [
     {
       sectionName: "스포트라이트",
-      theme: "크거나 작거나: 슈퍼IP vs. 스몰IP",
-      item: "팬덤과 플랫폼이 만든 또 하나의 우주, 슈퍼 IP",
-      img: "./img/manuscript1/banner.png",
-      imgMobile: "./img/manuscript1/banner-m.png",
+      theme: "인공지능(AI)와 방송영상 콘텐츠",
+      item: "방송영상콘텐츠의 다음 장을 여는 AI 기술과 창작자의 역할",
+      img: "./img/manuscript1/thum.png",
     },
     {
       sectionName: "글로벌 마켓 리포트",
       theme: "",
-      item: "영상 제작 활성화를 위한 주목할 만한 글로벌 인센티브 정책",
-      img: "./img/manuscript4/thum.jpg",
+      item: "스트리밍을 넘어서: 미국 OTT의 실시간 콘텐츠 도전과 진화",
+      img: "./img/manuscript5/thum.png",
     },
     {
       sectionName: "피플 인사이트",
