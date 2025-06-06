@@ -202,7 +202,6 @@
   width: fit-content;
 }
 
-
 /* =====================
    Video
 ===================== */
@@ -362,6 +361,43 @@
     gap: 28px;
   }
 }
+
+/* =====================
+   Law
+===================== */
+.law-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 24px;
+  padding:24px;
+  border-radius: 12px;
+  background-color:var(--gray100);
+}
+
+.law-title {
+  text-align: center;
+  color: var(--gray600);
+}
+
+.law-title > p:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.law-title > p:last-child {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray400);
+}
+
+.law-des {
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
 
 /* =====================
    Image
