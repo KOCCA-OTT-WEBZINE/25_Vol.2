@@ -107,6 +107,22 @@
   padding: 0 40px;
 }
 
+.sub-heading {
+  width: fit-content;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  border-radius: 12px;
+
+  color: white;
+  background-color: var(--brand100);
+
+  margin-top: 20px;
+  margin-bottom: 16px;
+  padding:8px 12px;
+}
+
 @media (max-width: 768px) {
 
   .lead-section {
@@ -361,6 +377,9 @@
   font-size: var(--text-md);
   color: var(--gray600);
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .text-brand {
