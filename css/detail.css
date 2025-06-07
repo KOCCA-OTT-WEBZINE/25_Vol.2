@@ -239,9 +239,28 @@
   text-align: justify;
 }
 
+.interview-sub-heading {
+  width: fit-content;
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  border-radius: 12px;
+
+  color: white;
+  background-color: var(--brand100);
+
+  margin-top: 20px;
+  margin-bottom: 4px;
+  padding:8px 12px;
+}
+
 .interview-summary {
-  text-align: justify;
-  font-size: var(--text-lead);
+  padding: 16px 12px;
+  background-color: var(--gray100);
+  border-radius: 12px;
+
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.8;
   margin-bottom: 40px;
@@ -250,13 +269,14 @@
 .interview-qna {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   line-height: 1.8;
 }
 
 .interview-q {
-  font-size: var(--text-lead);
+  font-size: 24px;
   font-weight: 600;
+  line-height: 1.6;
 }
 
 
