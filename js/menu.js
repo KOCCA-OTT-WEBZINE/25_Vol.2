@@ -1,68 +1,73 @@
-// 콘텐츠 데이터 정의 (간략화된 버전)
 const spotlightItem = {
   0: {
-    title: "팬덤과 플랫폼이 만든 또 하나의 우주, 슈퍼 IP",
-    author: { name: "장민지", affiliation: "경남대학교 미디어영상학과 조교수" },
+    title: "방송영상콘텐츠의 다음 장을 여는 AI 기술과 창작자의 역할",
+    author: { name: "최돈현", affiliation: "Soy.lab 대표" },
   },
   1: {
-    title: "작지만 강한 스몰 IP의 힘",
-    author: { name: "이성민", affiliation: "한국방송통신대학교 미디어영상학과 부교수" },
+    title: "‘어떻게 만들까’에서 ‘무엇을 만들까’의 시대로: AI 시대, 광고영상 제작의 변화와 전망",
+    author: { name: "박찬수", affiliation: "HSAD Chief AI Director" },
   },
   2: {
-    title: "커뮤니티와 함께 성장하기 : 숏폼IP가 보여주는 콘텐츠 비즈니스 실험",
-    author: { name: "강혜원", affiliation: "성균관대학교 컬처앤테크놀로지 융합전공 초빙교수" },
+    title: "AI가 제작한 ‘지브리’ 스타일은 저작권 침해일까: AI 창작물의 법적 보호를 둘러싼 쟁점과 논의",
+    author: { name: "김종균", affiliation: "특허청 상표디자인심사국 심사관" },
+  },
+  3: {
+    title: "AI 생성물 표시제 도입에 따른 주요 쟁점",
+    author: { name: "박만수", affiliation: "한국콘텐츠진흥원 콘텐츠산업정책연구센터 산업정책팀 선임연구원" },
   },
 };
 
 const globalItem = {
   0: {
-    title: "영상 제작 활성화를 위한 주목할 만한 글로벌 인센티브 정책",
-    author: { name: "채정화", affiliation: "서강대학교 ICT법경제연구소 연구교수" },
+    title: "스트리밍을 넘어서: 미국 OTT의 실시간 콘텐츠 도전과 진화",
+    author: { name: "유재성", affiliation: "위스콘신대학교 그린베이캠퍼스 조교수" },
   },
   1: {
-    title: "글로벌 스트리밍 시장 경쟁 심화와 새로운 전략적 시도",
-    author: { name: "이상원", affiliation: "경희대학교 미디어학과 교수" },
+    title: "글로벌 콘텐츠 제작비 급상승 원인과 대응 전략",
+    author: { name: "최선영", affiliation: "연세대학교 커뮤니케이션대학원 객원교수" },
   },
   2: {
-    title: "글로벌 OTT 서비스 사업자의 국가별 가격 전략",
+    title: "글로벌 스트리밍 플랫폼의 수익성 혁신, FAST가 이끈다",
+    author: { name: "김조한", affiliation: "뉴 아이디 상무" },
   },
 };
 
 const peopleItem = {
   0: {
-    title: "숏폼에서 콘텐츠 비즈니스의 미래를 보다",
-    author: { name: "유일한", affiliation: "케이프스플래닛 대표/PD" },
+    title: "AI 콘텐츠 제작, 영상의 기초에서 답을 찾다",
+    author: { name: "김광집", affiliation: "스튜디오메타케이 대표" },
   },
   1: {
-    title: "우리는 결국 이야기를 만드는 사람들, 반경 1미터에 대한 진정성과 경청이 핵심이다",
-    author: { name: "홍민지", affiliation: "SBS '문명특급' PD" },
+    title: "창작의 동반자이자 지렛대로, AI와 함께 성장하다",
+    author: { name: "현해리", affiliation: "무암 대표" },
   },
 };
 
 const trendItem = {
   0: {
-    title: "게임의 영상화, 스토리 너머 플랫폼을 고민하다: 게임 IP의 영상콘텐츠 제작 트렌드 변화",
-    author: { name: "송경원", affiliation: "『씨네21』 편집장" },
+    title: "미드 명가, HBO의 국내 상륙기",
+    author: { name: "김헌", affiliation: "한양대학교 ERICA 미디어학과 조교수" },
   },
   1: {
-    title: "K-로케이션 톺아보기: 한국, 글로벌 OTT의 로케이션 넥서스(Nexus) 되나",
-    author: { name: "김은영", affiliation: "성균관대학교 미디어커뮤니케이션학과 초빙교수" },
+    title: "왜 다시, <수사반장>인가: OTT 시대의 IP 리부트 전략",
+    author: { name: "홍석우", affiliation: "MOst267 EP" },
   },
   2: {
-    title: "스포츠, 범죄, 리얼리티 … 역사물? 글로벌 TV 시리즈 장르별 제작 현황과 전망",
-    author: { name: "김아영", affiliation: "한국국제문화교류진흥원 문화교류연구센터장" },
+    title: "스포츠 다큐멘터리, 새로운 카테고리가 되다",
+    author: { name: "조은성", affiliation: "다큐멘터리 감독" },
+  },
+  3: {
+    title: "국내 방송영상 제작 생태계 구조와 현황",
+    author: { name: "김 숙", affiliation: "(주)컬쳐미디어랩 대표" },
   },
 };
 
 const dataPointItem = {
   0: {
-    title: "2024년도 방송영상 상장사 시장 결산 및 동향 분석",
+    title: "2024-2025 글로벌 방송 포맷 시장 동향과 트렌드",
   },
   1: {
-    title: "2024년도 글로벌 및 국내 OTT 서비스 사업자 결산 분석",
-  },
-  2: {
-    title: "데이터로 보는 숏폼 콘텐츠 이용",
+    title: "주요 동아시아 국가의 로컬 OTT 서비스 사업자 현황",
   },
 };
 

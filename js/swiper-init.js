@@ -14,22 +14,22 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       sectionName: "피플 인사이트",
-      theme: "작지만 큰 세상, 숏폼을 만드는 사람들과 만나다!",
-      item: "케이프스플래닛, 유일한 대표/PD<br>SBS '문명특급' 홍민지 PD",
-      img: "./img/manuscript7/banner.png",
+      theme: "AI 활용한 영상콘텐츠 제작자를 만나다!",
+      item: "스튜디오메타케이, 김광집 대표<br>무암, 현해리 대표",
+      img: "./img/manuscript8/banner-pc.png",
       imgMobile: "./img/manuscript7/banner-m.png",
     },
     {
       sectionName: "트렌드 하이라이트",
       theme: "",
-      item: "게임의 영상화, 스토리 너머 플랫폼을 고민하다:<br>게임 IP의 영상콘텐츠 제작 트렌드 변화",
-      img: "./img/manuscript9/thum.jpg",
+      item: "미드 명가, HBO의 국내 상륙기",
+      img: "./img/manuscript10/thum.png",
     },
     {
       sectionName: "데이터 포인트",
       theme: "",
-      item: "2024년도 방송영상 상장사 시장 결산 및 동향 분석",
-      img: "./img/manuscript12/thum.png",
+      item: "2024-2025 글로벌 방송 포맷 시장 동향과 트렌드",
+      img: "./img/manuscript14/thum.jpg",
     },
   ];
 
