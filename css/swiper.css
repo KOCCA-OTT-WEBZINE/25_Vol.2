@@ -161,30 +161,53 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  display: none;
-  width: fit-content;
-  height: fit-content;
-  background-color: #ffffff90;
-  padding: 8px;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff50;
   border-radius: 999px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
 
+.swiper-button-prev {
+  padding: 12px 12px 12px 10px;
+}
+.swiper-button-next {
+  padding: 12px 10px 12px 12px;
+}
+
+.global-button-hidden,
+.people-button-hidden,
+.data-button-hidden, {
+  display: none !important;
+}
+@media (max-width: 1440px) {
+  .global-button-hidden,
+  .people-button-hidden,
+  .data-button-hidden, {
+    display: flex !important;
+  }
+}
+
 .swiper-button-prev > img,
 .swiper-button-next > img {
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 
 .swiper-button-next > img {
   transform: rotate(-180deg);
 }
 
-@media (max-width: 1024px) {
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: flex;
+.button-hidden {
+  display: none !important;
+}
+
+@media (max-width: 1440px) {
+  .button-hidden {
+    display: flex !important;
   }
 }
 
@@ -221,20 +244,17 @@
 .people-swiper .swiper-slide,
 .trend-swiper .swiper-slide,
 .data-swiper .swiper-slide {
-  width: 83.3%;
+  width: calc((100% - 32px) / 3);
   flex-shrink: 0;
 }
 
-/* Grid 전환 */
 @media screen and (min-width: 1024px) {
   .spotlight-swiper,
   .global-swiper,
   .people-swiper,
   .trend-swiper,
   .data-swiper {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    display: block !important;
   }
 
   .spotlight-swiper .swiper-wrapper,
@@ -242,28 +262,6 @@
   .people-swiper .swiper-wrapper,
   .trend-swiper .swiper-wrapper,
   .data-swiper .swiper-wrapper {
-    display: contents !important;
-  }
-
-  .spotlight-swiper .swiper-slide,
-  .global-swiper .swiper-slide,
-  .people-swiper .swiper-slide,
-  .trend-swiper .swiper-slide,
-  .data-swiper .swiper-slide {
-    width: 100% !important;
-    flex-shrink: 1;
-  }
-
-  .spotlight-button-prev,
-  .spotlight-button-next,
-  .global-button-prev,
-  .global-button-next,
-  .people-button-prev,
-  .people-button-next,
-  .trend-button-prev,
-  .trend-button-next,
-  .data-button-prev,
-  .data-button-next {
-    display: none !important;
+    display: flex !important;
   }
 }

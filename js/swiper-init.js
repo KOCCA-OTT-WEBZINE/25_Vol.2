@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   new Swiper(".main-banner-swiper", {
     loop: true,
-    autoplay: { delay: 5000 },
+    autoplay: { delay: 3000 },
     pagination: {
       el: ".main-banner-swiper .swiper-pagination",
       clickable: true,
@@ -75,24 +75,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // === Swiper 초기화/해제 함수 ===
   function toggleSwiper(key, selector, nextEl, prevEl) {
-    const isMobile = window.innerWidth < 1024;
-    const initialized = !!swiperStates[key];
+  const initialized = !!swiperStates[key];
 
-    if (isMobile && !initialized) {
-      swiperStates[key] = new Swiper(selector, {
-        slidesPerView: "auto",
-        spaceBetween: 16,
-        grabCursor: true,
-        navigation: {
-          nextEl,
-          prevEl,
+  if (!initialized) {
+    swiperStates[key] = new Swiper(selector, {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 16,
+      slideToClickedSlide: true,
+      grabCursor: true,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl,
+        prevEl,
+      },
+      breakpoints: {
+        1440: {
+          slidesPerView: 3,
+          spaceBetween: 16,
         },
-      });
-    } else if (!isMobile && initialized) {
-      swiperStates[key].destroy(true, true);
-      swiperStates[key] = null;
-    }
+        991: {
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 16,
+        },
+      },
+    });
   }
+}
 
   // === 전체 Swiper 초기화 실행 함수 ===
   function initAllSwipers() {
