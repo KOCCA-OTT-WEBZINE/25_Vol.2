@@ -4,32 +4,32 @@ document.addEventListener("DOMContentLoaded", () => {
       sectionName: "스포트라이트",
       theme: "인공지능(AI)와 방송영상 콘텐츠",
       item: "방송영상콘텐츠의 다음 장을 여는 AI 기술과 창작자의 역할",
-      img: "./img/manuscript1/thum.png",
+      img: "./img/manuscript1/banner.png",
     },
     {
       sectionName: "글로벌 마켓 리포트",
       theme: "",
       item: "스트리밍을 넘어서: 미국 OTT의 실시간 콘텐츠 도전과 진화",
-      img: "./img/manuscript5/thum.png",
+      img: "./img/manuscript5/banner.png",
     },
     {
       sectionName: "피플 인사이트",
       theme: "AI 활용한 영상콘텐츠 제작자를 만나다!",
       item: "스튜디오메타케이, 김광집 대표<br>무암, 현해리 대표",
-      img: "./img/manuscript8/banner-pc.png",
-      imgMobile: "./img/manuscript8/banner-pc.png",
+      img: "./img/manuscript8/banner.png",
+      // imgMobile: "./img/manuscript8/banner-pc.png",
     },
     {
       sectionName: "트렌드 하이라이트",
       theme: "",
       item: "미드 명가, HBO의 국내 상륙기",
-      img: "./img/manuscript10/thum.png",
+      img: "./img/manuscript10/banner.png",
     },
     {
       sectionName: "데이터 포인트",
       theme: "",
       item: "2024-2025 글로벌 방송 포맷 시장 동향과 트렌드",
-      img: "./img/manuscript14/thum.jpg",
+      img: "./img/manuscript14/banner.png",
     },
   ];
 

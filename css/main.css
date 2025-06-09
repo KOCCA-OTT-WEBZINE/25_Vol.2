@@ -390,7 +390,6 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
   align-items: flex-end;
   padding: 24px;
   width: 100%;
-  height: 378px;
   border-radius: 12px;
   border: 4px solid transparent;
   overflow: hidden;
@@ -398,6 +397,17 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
   color: white;
   transition: all 0.3s ease;
   scroll-snap-align: start;
+}
+
+.spotlight-item {
+  height: 378px;
+}
+
+.global-item,
+.people-item,
+.trend-item,
+.data-item {
+  height: 300px;
 }
 
 .spotlight-item:hover,
@@ -429,7 +439,7 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
 .item-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
   z-index: 1;
 }
 
