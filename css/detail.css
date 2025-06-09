@@ -1,3 +1,9 @@
+@import url('https://cdn.jsdelivr.net/gh/leetaewook/gmarket-sans-dynamic-subset/GmarketSans.css');
+.quotes {
+  font-family: 'GmarketSans', sans-serif;
+  font-weight: 700;
+}
+
 /* =====================
    Detail Styles
 ===================== */
