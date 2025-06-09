@@ -78,13 +78,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const initialized = !!swiperStates[key];
 
   if (!initialized) {
+    const slideCount = document.querySelectorAll(`${selector} .swiper-slide`).length;
+
     swiperStates[key] = new Swiper(selector, {
       slidesPerView: 1,
       slidesPerGroup: 1,
       spaceBetween: 16,
-      slideToClickedSlide: true,
+      slideToClickedSlide: false,
       grabCursor: true,
-      loop: true,
+      loop: slideCount >= 3,
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,
