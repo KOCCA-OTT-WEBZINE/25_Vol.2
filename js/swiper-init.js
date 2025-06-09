@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       theme: "AI 활용한 영상콘텐츠 제작자를 만나다!",
       item: "스튜디오메타케이, 김광집 대표<br>무암, 현해리 대표",
       img: "./img/manuscript8/banner-pc.png",
-      imgMobile: "./img/manuscript7/banner-m.png",
+      imgMobile: "./img/manuscript8/banner-pc.png",
     },
     {
       sectionName: "트렌드 하이라이트",

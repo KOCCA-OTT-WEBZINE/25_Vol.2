@@ -143,6 +143,14 @@
   .main-content {
     padding: 0 20px;
   }
+
+  .sub-heading {
+    font-size: 14px;
+
+    margin-top: 16px;
+    margin-bottom: 12px;
+    padding:6px 8px;
+  }
 }
 
 /* =====================
@@ -256,7 +264,7 @@
 }
 
 .interview-summary {
-  padding: 16px 12px;
+  padding: 8px 12px;
   background-color: var(--gray100);
   border-radius: 12px;
 
@@ -277,6 +285,25 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .interview-summary {
+    padding: 6px 8px;
+    font-size: 18px;
+  }
+
+  .interview-sub-heading {
+    font-size: 14px;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding:6px 8px;
+  }
+
+  .interview-q {
+    font-size: 18px;
+  }
 }
 
 
@@ -416,6 +443,41 @@
   font-size: 16px;
   line-height: 1.8;
   text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .law-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 12px;
+    padding:16px;
+    border-radius: 12px;
+    background-color:var(--gray100);
+  }
+
+  .law-title {
+    text-align: center;
+    color: var(--gray600);
+  }
+
+  .law-title > p:first-child {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .law-title > p:last-child {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--gray400);
+  }
+
+  .law-des {
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: justify;
+  }
 }
 
 
@@ -673,6 +735,16 @@
 @media (min-width: 768px) {
   .author-description {
     font-size: var(--text-md);
+  }
+}
+
+.pc-br {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .pc-br {
+    display: none;
   }
 }
 
