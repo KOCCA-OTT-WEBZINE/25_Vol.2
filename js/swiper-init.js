@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const contents = [
     {
       sectionName: "스포트라이트",
-      theme: "인공지능(AI)와 방송영상 콘텐츠",
+      theme: "인공지능(AI)과 방송영상콘텐츠",
       item: "방송영상콘텐츠의 다음 장을 여는 AI 기술과 창작자의 역할",
       img: "./img/manuscript1/banner.png",
     },
@@ -17,13 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
       theme: "AI 활용한 영상콘텐츠 제작자를 만나다!",
       item: "스튜디오메타케이, 김광집 대표<br>무암, 현해리 대표",
       img: "./img/manuscript8/banner.png",
-      // imgMobile: "./img/manuscript8/banner-pc.png",
+      imgMobile: "./img/manuscript8/banner-m.png",
     },
     {
       sectionName: "트렌드 하이라이트",
       theme: "",
       item: "미드 명가, HBO의 국내 상륙기",
       img: "./img/manuscript10/banner.png",
+      imgMobile: "./img/manuscript10/banner-m.png",
     },
     {
       sectionName: "데이터 포인트",
