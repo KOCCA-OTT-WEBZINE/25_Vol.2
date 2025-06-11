@@ -1,7 +1,7 @@
 const spotlightItem = {
   0: {
     title: "방송영상콘텐츠의 다음 장을 여는 AI 기술과 창작자의 역할",
-    author: { name: "최돈현", affiliation: "Soy.lab 대표" },
+    author: { name: "최돈현", affiliation: "소이랩 대표" },
   },
   1: {
     title: "‘어떻게 만들까’에서 ‘무엇을 만들까’의 시대로: AI 시대, 광고영상 제작의 변화와 전망",
@@ -58,7 +58,7 @@ const trendItem = {
   },
   3: {
     title: "국내 방송영상 제작 생태계 구조와 현황",
-    author: { name: "김 숙", affiliation: "(주)컬쳐미디어랩 대표" },
+    author: { name: "김 숙", affiliation: "컬쳐미디어랩 대표" },
   },
 };
 
