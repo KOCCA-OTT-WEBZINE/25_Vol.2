@@ -179,13 +179,14 @@
 
 .global-button-hidden,
 .people-button-hidden,
-.data-button-hidden, {
+.data-button-hidden {
   display: none !important;
 }
+
 @media (max-width: 1440px) {
   .global-button-hidden,
   .people-button-hidden,
-  .data-button-hidden, {
+  .data-button-hidden {
     display: flex !important;
   }
 }
