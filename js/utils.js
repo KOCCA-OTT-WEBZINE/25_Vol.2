@@ -11,7 +11,11 @@ function updateProgressBar() {
   const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
   const scrollableHeight = scrollHeight - clientHeight;
   const scrolled = (scrollTop / scrollableHeight) * 100;
-  document.getElementById("progress-bar").style.width = `${scrolled}%`;
+
+  const progressBar = document.getElementById("progress-bar");
+  if (progressBar) {
+    progressBar.style.width = `${scrolled}%`;
+  }
 }
 
 window.addEventListener("scroll", updateProgressBar);
@@ -25,9 +29,9 @@ function handleTopButtonVisibility() {
 
   const topButton = document.getElementById("top-button");
   if (scrollY > 200 && distanceToBottom > 200) {
-    topButton.classList.add("show");
+    topButton?.classList.add("show");
   } else {
-    topButton.classList.remove("show");
+    topButton?.classList.remove("show");
   }
 }
 

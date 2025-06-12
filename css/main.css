@@ -80,9 +80,32 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
 }
 
 .nav-right .nav-item {
+  position: relative;
   font-size: var(--text-lg);
   font-weight: 600;
   color: white;
+  text-decoration: none;
+  padding-bottom: 4px;
+  overflow: hidden;
+}
+
+/* ::after로 밑줄 생성 */
+.nav-right .nav-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+/* hover 시 밑줄 애니메이션 */
+.nav-right .nav-item:hover::after {
+  transform: scaleX(1);
 }
 
 .vol-info {
@@ -397,6 +420,19 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
   color: white;
   transition: all 0.3s ease;
   scroll-snap-align: start;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.spotlight-item.animate,
+.global-item.animate,
+.people-item.animate,
+.trend-item.animate,
+.data-item.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .swiper-slide-duplicate a {

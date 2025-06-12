@@ -480,6 +480,33 @@
     </div>
   </footer>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const selectors = [
+        ".spotlight-item",
+        ".global-item",
+        ".people-item",
+        ".trend-item",
+        ".data-item"
+      ];
+      const items = document.querySelectorAll(selectors.join(","));
+
+      function checkSlideUp() {
+        const triggerBottom = window.innerHeight * 0.9;
+        items.forEach((item) => {
+          const rect = item.getBoundingClientRect();
+          if (rect.top < triggerBottom) {
+            item.classList.add("animate");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", checkSlideUp);
+      window.addEventListener("resize", checkSlideUp);
+      checkSlideUp();
+    });
+  </script>
+
   <!-- 스크립트 -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="./js/utils.js"></script>
