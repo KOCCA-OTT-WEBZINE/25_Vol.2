@@ -5,12 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
       theme: "인공지능(AI)과 방송영상콘텐츠",
       item: "방송영상콘텐츠의 다음 장을 여는 AI 기술과 창작자의 역할",
       img: "./img/manuscript1/banner.png",
+      imgMobile: "./img/manuscript1/banner-m.png",
     },
     {
       sectionName: "글로벌 마켓 리포트",
       theme: "",
       item: "스트리밍을 넘어서: 미국 OTT의 실시간 콘텐츠 도전과 진화",
       img: "./img/manuscript5/banner.png",
+      imgMobile: "./img/manuscript5/banner-m.png",
     },
     {
       sectionName: "피플 인사이트",
